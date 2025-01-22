@@ -8,19 +8,19 @@ let isCaps = false;
 
 enterKey.addEventListener('click',function(){
     let content = textContainer.innerHTML;
-    let newContent = content+"\n"; 
+    let newContent = content + "<br>"; 
     textContainer.innerHTML = newContent;  
 })
 
 spaceKey.addEventListener("click",function(){
     let content = textContainer.innerHTML;
-    let newContent = content+" "; 
+    let newContent = content + "  "; 
     textContainer.innerHTML = newContent;  
 })
 
 deleteKey.addEventListener('click',function(){
     let content = textContainer.innerHTML;
-    let newContent = content.slice(0,content.length-1 );
+    let newContent = content.slice(0,content.length - 1 );
     textContainer.innerHTML = newContent; 
 })
 
